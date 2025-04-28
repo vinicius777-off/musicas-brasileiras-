@@ -17,17 +17,46 @@
         </nav>
     </header>
 
-    <section class="sobre">
-        <h1>Sobre o Site</h1>
-       <img src="garotadeipanema.jpg" alt="Capa do disco Garota de Ipanema">
-       <img src="asabranca.jpg" alt="Luiz Gonzaga tocando Asa Branca">
-       <img src="brasil.jpg" alt="Bandeira do Brasil com notas musicais">
-       <img src="tremdasonze.jpg" alt="Cartola cantando Trem das Onze">
-        <p>Este site foi criado para divulgar as músicas e artistas mais representativos da música brasileira. Aqui, você pode explorar as canções mais famosas, como também descobrir novas músicas do nosso país.</p>
-    </section>
+  <section class="sobre">
+    <h1>Sobre o Site</h1>
+
+    <img src="garotadeipanema.jpg" id="g1" alt="Capa do disco Garota de Ipanema"><br>
+    <img src="asabranca.jpg" id="g2" alt="Luiz Gonzaga tocando Asa Branca"><br>
+    <img src="brasil.jpg" id="g3" alt="Bandeira do Brasil com notas musicais"><br>
+    <img src="tremdasonze.jpg" id="g4" alt="Cartola cantando Trem das Onze"><br>
+
+    <p>Este site foi criado para divulgar as músicas e artistas mais representativos da música brasileira. Aqui, você pode explorar as canções mais famosas, como também descobrir novas músicas do nosso país.</p>
+</section>
+
+<!-- Tag de áudio (usada via JavaScript) -->
+<audio id="player" controls style="display:none;"></audio>
 
     <footer>
         <p>&copy; 2025 Música Brasileira | Todos os direitos reservados</p>
     </footer>
+<script>
+    const player = document.getElementById("player");
+
+    document.getElementById("g1").addEventListener("click", function() {
+        tocarMusica("garotadeipanema.mp3");
+    });
+
+    document.getElementById("g2").addEventListener("click", function() {
+        tocarMusica("asabranca.mp3");
+    });
+
+    document.getElementById("g3").addEventListener("click", function() {
+        tocarMusica("brasil.mp3");
+    });
+
+    document.getElementById("g4").addEventListener("click", function() {
+        tocarMusica("tremdasonze.mp3");
+    });
+
+    function tocarMusica(musica) {
+        player.src = musica;
+        player.play();
+    }
+</script>
 </body>
 </html>
