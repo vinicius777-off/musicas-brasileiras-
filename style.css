@@ -1,11 +1,11 @@
-/* Reset de margens e padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definindo o fundo e fonte padrão */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
