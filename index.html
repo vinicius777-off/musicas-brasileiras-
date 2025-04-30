@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Musicas Brasileiras</title>
+    <title>Sobre - Músicas Brasileiras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,46 +17,44 @@
         </nav>
     </header>
 
-  <section class="sobre">
-    <h1>Sobre o Site</h1>
+    <section class="sobre">
+        <h1>Sobre o Site</h1>
+        <img src="garotadeipanema.jpg" id="g1" alt="Capa do disco Garota de Ipanema" class="musica-img">
+        <img src="asabranca.jpg" id="g2" alt="Luiz Gonzaga tocando Asa Branca" class="musica-img">
+        <img src="brasil.jpg" id="g3" alt="Bandeira do Brasil com notas musicais" class="musica-img">
+        <img src="tremdasonze.jpg" id="g4" alt="Cartola cantando Trem das Onze" class="musica-img">
+        
+        <p>Este site foi criado para divulgar as músicas e artistas mais representativos da música brasileira. Aqui, você pode explorar as canções mais famosas, como também descobrir novas músicas do nosso país.</p>
+    </section>
 
-    <img src="garotadeipanema.jpg" id="g1" alt="Capa do disco Garota de Ipanema"><br>
-    <img src="asabranca.jpg" id="g2" alt="Luiz Gonzaga tocando Asa Branca"><br>
-    <img src="brasil.jpg" id="g3" alt="Bandeira do Brasil com notas musicais"><br>
-    <img src="tremdasonze.jpg" id="g4" alt="Cartola cantando Trem das Onze"><br>
-
-    <p>Este site foi criado para divulgar as músicas e artistas mais representativos da música brasileira. Aqui, você pode explorar as canções mais famosas, como também descobrir novas músicas do nosso país.</p>
-</section>
-
-<!-- Tag de áudio (usada via JavaScript) -->
-<audio id="player" controls style="display:none;"></audio>
+    <!-- Player de áudio (visível) -->
+    <audio id="player" controls>
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
     <footer>
         <p>&copy; 2025 Música Brasileira | Todos os direitos reservados</p>
     </footer>
-<script>
-    const player = document.getElementById("player");
 
-    document.getElementById("g1").addEventListener("click", function() {
-        tocarMusica("garotadeipanema.mp3");
-    });
+    <script>
+        const player = document.getElementById("player");
+        const imagens = [
+            { id: "g1", musica: "garotadeipanema.mp3" },
+            { id: "g2", musica: "asabranca.mp3" },
+            { id: "g3", musica: "brasil.mp3" },
+            { id: "g4", musica: "tremdasonze.mp3" }
+        ];
 
-    document.getElementById("g2").addEventListener("click", function() {
-        tocarMusica("asabranca.mp3");
-    });
+        imagens.forEach(item => {
+            document.getElementById(item.id).addEventListener("click", function() {
+                tocarMusica(item.musica);
+            });
+        });
 
-    document.getElementById("g3").addEventListener("click", function() {
-        tocarMusica("brasil.mp3");
-    });
-
-    document.getElementById("g4").addEventListener("click", function() {
-        tocarMusica("tremdasonze.mp3");
-    });
-
-    function tocarMusica(musica) {
-        player.src = musica;
-        player.play();
-    }
-</script>
+        function tocarMusica(musica) {
+            player.src = musica;
+            player.play();
+        }
+    </script>
 </body>
 </html>
