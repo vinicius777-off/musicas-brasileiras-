@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musicas Brasileiras</title>
+    <title>Músicas Brasileiras</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .descricao-expandida {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,50 +33,80 @@
             <li>
                 <article>
                     <h3>Garota de Ipanema - Tom Jobim</h3>
-                    <p>"Garota de Ipanema" é uma das músicas mais emblemáticas de Tom Jobim e Vinícius de Moraes, e ela captura, de forma mágica, o encantamento de quem observa uma jovem mulher deslumbrante passando pela praia de Ipanema. A letra transmite um mix de fascínio e uma certa melancolia, como se o cantor estivesse completamente hipnotizado pela beleza da garota, mas ao mesmo tempo sentindo que ela está distante, quase intocável.</p>
-                    <p>Um trecho que reflete bem esse sentimento é quando ele diz:</p>
-                    <blockquote>
-                        "Ah, se eu pudesse, eu pegava a garota e a levava para o meu lado..."
-                    </blockquote>
-                    <p>É como se ele estivesse vendo essa beleza única, desejando poder estar ao lado dela, mas ao mesmo tempo ciente de que essa possibilidade é apenas um sonho. A música carrega um pouco dessa mistura de desejo e saudade, e é difícil não se perder no clima de nostalgia e paixão que ela desperta. Ela é, sem dúvida, uma ode à beleza natural e ao espírito do Rio de Janeiro.</p>
+                    <ul class="descricao-musica">
+                        <li>Resumo: "Garota de Ipanema" é uma das músicas mais emblemáticas da Bossa Nova, escrita por Tom Jobim e Vinícius de Moraes.</li>
+                        <li><button class="mostrar-mais" data-target="garota-de-ipanema">Mostrar mais</button></li>
+                        <li id="garota-de-ipanema" class="descricao-expandida">
+                            <p>Composta em 1962, a música retrata a beleza de Helô Pinheiro, uma jovem que passava pela orla de Ipanema no Rio de Janeiro. O estilo suave da melodia combinada com a poesia sofisticada da letra tornou a música um sucesso internacional.</p>
+                            <p>Trecho marcante: "Olha que coisa mais linda, mais cheia de graça..."</p>
+                            <p>"Garota de Ipanema" ajudou a consolidar a Bossa Nova como um movimento musical global, influenciando músicos do mundo inteiro.</p>
+                        </li>
+                    </ul>
                 </article>
             </li>
+
             <li>
                 <article>
                     <h3>Asa Branca - Luiz Gonzaga</h3>
-                    <p>"Asa Branca", de Luiz Gonzaga, é uma das músicas mais emblemáticas do repertório nordestino. Ela fala sobre a seca no sertão e a dor de quem é forçado a deixar sua terra por causa da escassez de água e comida. Um trecho muito emocionante é:</p>
-                    <blockquote>
-                        "Quando o verde dos teus olhos se espalhar na plantação..."
-                    </blockquote>
-                    <p>Nesse verso, a música traz a esperança de que a seca vai acabar, e o sertão vai se reverter em vida e prosperidade. É uma metáfora de renovação e de fé no retorno da chuva, que traz a possibilidade de recomeço para o povo nordestino. A canção, ao mesmo tempo que descreve a dor, também exalta a força do sertanejo e sua esperança em dias melhores.</p>
+                    <ul class="descricao-musica">
+                        <li>Resumo: Um dos maiores clássicos da música nordestina, composta por Luiz Gonzaga e Humberto Teixeira em 1947.</li>
+                        <li><button class="mostrar-mais" data-target="asa-branca">Mostrar mais</button></li>
+                        <li id="asa-branca" class="descricao-expandida">
+                            <p>"Asa Branca" retrata a dor do sertanejo diante da seca que castiga o sertão nordestino, forçando muitos a deixarem suas casas em busca de sobrevivência.</p>
+                            <p>Trecho emocionante: "Quando olhei a terra ardendo, qual fogueira de São João..."</p>
+                            <p>A canção é um símbolo de resistência e esperança, e é considerada um hino não-oficial do povo nordestino. Luiz Gonzaga ficou conhecido como o "Rei do Baião" graças a obras como essa.</p>
+                        </li>
+                    </ul>
                 </article>
             </li>
+
             <li>
                 <article>
                     <h3>Aquarela do Brasil - Ary Barroso</h3>
-                    <p>"Aquarela do Brasil", de Ary Barroso, é uma das músicas mais celebradas da música brasileira, um verdadeiro hino de exaltação à beleza e à cultura do Brasil. Um trecho muito marcante é:</p>
-                    <blockquote>
-                        "Brasil, meu Brasil brasileiro, meu mulato inzoneiro, vou cantar-te nos meus versos..."
-                    </blockquote>
-                    <p>Neste verso, o cantor expressa o amor profundo pela terra brasileira e pela sua gente, representada pelo "mulato inzoneiro", uma figura que simboliza a alegria, a malícia e o gingado típicos do Brasil. A música é uma verdadeira declaração de paixão pela cultura e pela diversidade do país.</p>
+                    <ul class="descricao-musica">
+                        <li>Resumo: Uma vibrante exaltação à pátria brasileira, escrita por Ary Barroso em 1939.</li>
+                        <li><button class="mostrar-mais" data-target="aquarela-do-brasil">Mostrar mais</button></li>
+                        <li id="aquarela-do-brasil" class="descricao-expandida">
+                            <p>"Aquarela do Brasil", também conhecida como "Brasil", é considerada uma das primeiras músicas do gênero samba-exaltação. A letra enaltece as paisagens e o povo do país com um tom patriótico e emocional.</p>
+                            <p>Trecho famoso: "Brasil, meu Brasil brasileiro, meu mulato inzoneiro..."</p>
+                            <p>A música ficou ainda mais conhecida ao ser incluída em produções da Disney nos anos 1940, projetando o Brasil no cenário internacional da música popular.</p>
+                        </li>
+                    </ul>
                 </article>
             </li>
+
             <li>
                 <article>
                     <h3>Trem das Onze - Adoniran Barbosa</h3>
-                    <p>"Trem das Onze", de Adoniran Barbosa, é um clássico da música brasileira que fala sobre o amor e a saudade de alguém que precisa partir. Um trecho marcante da música é:</p>
-                    <blockquote>
-                        "Saudosa maloca, perdi a mora, onde é que eu vou morar..."
-                    </blockquote>
-                    <p>Nesse verso, a letra reflete a dor e o pesar de quem tem que deixar para trás algo querido, seja um lugar, uma pessoa ou uma fase da vida. A música transmite a melancolia de quem parte, mas também a resistência e o jeito simples e sincero de quem vive a vida com dificuldades, como no caso do personagem que tem que pegar o trem das onze e deixar sua "mora", um lugar que guarda boas lembranças.
-                    </p>
+                    <ul class="descricao-musica">
+                        <li>Resumo: Um dos maiores sucessos do samba paulista, composto por Adoniran Barbosa em 1964.</li>
+                        <li><button class="mostrar-mais" data-target="trem-das-onze">Mostrar mais</button></li>
+                        <li id="trem-das-onze" class="descricao-expandida">
+                            <p>Essa música retrata o cotidiano e as dificuldades da classe trabalhadora em São Paulo, especialmente daqueles que moravam longe do centro e dependiam do trem para voltar para casa.</p>
+                            <p>Trecho marcante: "Eu moro em Jaçanã... se eu perder esse trem, que sai agora às onze horas..."</p>
+                            <p>Com humor e sensibilidade, Adoniran capturou a alma paulistana e fez história como um dos grandes cronistas musicais do Brasil urbano.</p>
+                        </li>
+                    </ul>
                 </article>
             </li>
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2025 Música Brasileira | Todos os direitos reservados</p>
+        <p>&copy; 2025 Música Brasileira | Iabelly, Thailany e Vinicius L.</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.mostrar-mais').forEach(botao => {
+            botao.addEventListener('click', () => {
+                const targetId = botao.getAttribute('data-target');
+                const conteudo = document.getElementById(targetId);
+
+                const estaVisivel = conteudo.style.display === 'block';
+                conteudo.style.display = estaVisivel ? 'none' : 'block';
+                botao.textContent = estaVisivel ? 'Mostrar mais' : 'Esconder';
+            });
+        });
+    </script>
 </body>
 </html>
